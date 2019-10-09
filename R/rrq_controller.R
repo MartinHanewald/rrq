@@ -79,6 +79,11 @@ R6_rrq_controller <- R6::R6Class(
                  timeout, time_poll, progress)
     },
 
+    bulk_wait = function(x, timeout = Inf, time_poll = NULL,
+                           progress = NULL) {
+      rrq_bulk_wait(self$con, self$keys, x, timeout, time_poll, progress)
+    },
+
     ## 1. Tasks
     ##
     ## TODO: decide if the tasks/task split here is ideal.  It does
