@@ -1,3 +1,7 @@
+# rrq 0.2.8
+
+* `$lapply` and friends restored after being removed during the refactor for version 0.2.0 (mrc-558)
+
 # rrq 0.2.7
 
 * rrq progress now passes all fields in underlying condition (mrc-1772)
